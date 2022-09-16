@@ -21,6 +21,7 @@ const Card: FC<CardProps> =
       variant,
       children
    }) => {
+
       return (
          <div style={{
             width,
@@ -31,8 +32,8 @@ const Card: FC<CardProps> =
             background: variant === CardVariant.primary
                ? 'lightgrey'
                : ''
-
-         }}>
+         }}
+         >
             {children}
          </div>
       );
