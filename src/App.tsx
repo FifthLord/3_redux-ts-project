@@ -3,6 +3,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Card, { CardVariant } from './components/Card';
+import EventsExample from './components/EventsExample';
 import List from './components/List';
 import TodoItem from './components/TodoItem';
 import UserItem from './components/UserItem';
@@ -40,6 +41,7 @@ const App = () => {
 
    return (
       <div>
+         <EventsExample />
          <Card
             variant={CardVariant.outlined}
             width='200px'
