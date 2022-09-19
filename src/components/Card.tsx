@@ -1,6 +1,7 @@
 
 
 import React, { FC } from 'react';
+import { PropsWithChildren } from 'react'
 
 export enum CardVariant {
    outlined = 'outlined',
@@ -11,10 +12,10 @@ interface CardProps {
    width?: string;
    height?: string;
    variant: CardVariant;
-   children?: React.ReactChild | React.ReactNode
+   //children?: React.ReactChild | React.ReactNode
 }
 
-const Card: FC<CardProps> =
+const Card: FC<PropsWithChildren<CardProps>> =
    ({
       width,
       height,
